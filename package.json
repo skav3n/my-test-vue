@@ -1,0 +1,27 @@
+{
+  "name": "my-test-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "main": "./dist/my-test-vue.umd.js",
+  "module": "./dist/my-test-vue.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-test-vue.es/.s",
+      "require": "./dist/my-test-vue.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "vite": "^3.0.0"
+  }
+}
